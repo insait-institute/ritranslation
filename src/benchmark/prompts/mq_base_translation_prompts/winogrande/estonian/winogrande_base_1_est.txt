@@ -1,0 +1,39 @@
+## Ülesande kirjeldus
+Eesti keel ei ole mu emakeel, mind huvitab, kuidas sa ütleksid ühe küsimuse ja vastusevariandi ühest võrdlustestist <target_language> keeles.
+
+## Tõlkejuhised
+Mind huvitab, kuidas sa emakeelekõnelejana seda oma emakeeles ütleksid ja ka see, kuidas sa tähenduslikult ühendaksid vastusevariantide tõlke küsimusega. Tahaksin näha, kuidas neid tekste saab tõlkida nii, et see kõlaks eesti keeles loomulikult ja muidugi, et grammatika oleks õige (näiteks käändelõpud). **Tähtis!** Tõlgi nii, et sõnad enne "_" ei annaks vihjet võimalikule vastusele. Näiteks kasuta tegusõna puhul vormi, mis ei reedaks arvu (ainsus/mitmus), näiteks lisades sulgudesse mitmuse lõpu: ol(id). Siin on näide, kuidas see peaks välja nägema:
+
+### Näide 1
+{
+    "Originaal_küsimus": """Adam always spent all of the free time watching Tv unlike Hunter who volunteered, due to _ being lazy."""
+    "Originaal_vastus": """Hunter"""
+}
+Tõlge:
+{
+    "Küsimus": """Adam veetis alati kogu oma vaba aja telerit vaadates, erinevalt Hunterist, kes tegutses vabatahtlikuna, sest _ ol(id) laisk."""
+    "Vastus": """Hunter"""
+}
+### Näide 2
+{
+    "Originaal_küsimus": """Eric went to Leslie's house to play with the new dog, but there was no answer. _ was at the park."""
+    "Originaal_vastus": """Eric"""
+}
+Tõlge:
+{
+    "Küsimus": """Eric läks Leslie maja juurde, et uue koeraga mängida, kuid keegi ei vastanud. _ ol(id) pargis."""
+    "Vastus": """Eric"""
+}
+
+## Originaaltekst
+{
+    "Originaal_küsimus": """<original_question>"""
+    "Originaal_vastus": """<original_answers>"""
+}
+
+## Vormindamisjuhised
+Nüüd trüki tõlgitud andmed <target_language> keeles järgmises vormis ja palun väljasta ainult eestikeelne tekst:
+{
+    "Küsimus": """tõlgitud_küsimus_<target_language>_keelde"""
+    "Vastus": """tõlgitud_vastus_<target_language>_keelde"""
+}

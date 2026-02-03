@@ -1,0 +1,10 @@
+Sen bir okulda öğretmensin ve online İngilizce ilginç bir sınav buldun - bunu Türkçe'ye (<target_language>) çevirmek istiyorsun. Görevin, soruları ve cevap seçeneklerini Türkçe'ye çevirmek, öyle ki terimler orijinal sorunun anlamını doğru bir şekilde aktarsın, ancak metin Türkçe'de kulağa doğal gelsin. Ayrıca, çevirinin dilbilgisel olarak doğru yazıldığından ve cevap gerektiren ana sorunun çevrildiğinden emin ol, ayrıca cevapların ana soruyla dilbilgisel ve ideolojik olarak bağlantılı olması önemlidir. Ayrıca programlama kodunu veya fonksiyon adları gibi benzer bilgisayar terimlerini çevirme. Şimdi sana çevrilecek metni vereceğim:
+{
+    "Orijinal_Soru": """<original_question>"""
+    "Orijinal_Cevaplar": """<original_answers>"""
+}
+Şimdi çevrilen verileri Türkçe olarak aşağıdaki formatta yaz:
+{
+    "Soru": """çevrilen_soru_in_<target_language>"""
+    "Cevaplar": """çevrilen_cevaplar_in_<target_language>_liste_veya_metin_olarak"""
+}

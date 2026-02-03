@@ -1,0 +1,32 @@
+task: "BENCHMARK"
+output_dir: "src/benchmark/data"
+translation_model:
+  name: "gpt-4o-mini-2024-07-18"
+  provider: "openai"
+  args: {
+    reasoning_level: "low"
+  }
+judge_model:
+  name: "gpt-4o-mini-2024-07-18"
+  provider: "openai"
+  args: {
+    reasoning_level: "low"
+  }
+task_config:
+  benchmark: 
+    name: "allenai/ai2_arc"
+    subset: ["ARC-Easy", "ARC-Challenge"]
+    split: ["train", "validation", "test"]
+  target_language: "Ukrainian"
+  method: "USI" # SC, USI, TRANK, BoN
+  max_workers: True
+  num_workers: 1
+  n_samples: 1
+  question_fields: ["question"]
+  answer_fields: ["choices.text"]
+  agent_check: False
+  few_shot: False
+  multi_prompt: True
+  save_to_hf: False
+  prompt_files: ["example_base_1.txt", "example_base_2.txt", "ukrainian/example_base_1_ukr.txt", "ukrainian/example_base_2_ukr.txt"]
+

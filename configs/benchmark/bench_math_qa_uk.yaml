@@ -1,0 +1,31 @@
+task: "BENCHMARK"
+output_dir: "src/benchmark/data"
+translation_model:
+  name: "gpt-4o-mini-2024-07-18"
+  provider: "openai"
+  args: {
+    reasoning_level: "low"
+  }
+judge_model:
+  name: "gpt-4o-mini-2024-07-18"
+  provider: "openai"
+  args: {
+    reasoning_level: "low"
+  }
+task_config:
+  benchmark: 
+    name: "allenai/math_qa"
+    subset: [""]
+    split: ["test", "validation"]
+  target_language: "Ukrainian"
+  method: "USI" # SC, USI, TRANK, BoN
+  max_workers: True
+  num_workers: 60
+  n_samples: 1
+  question_fields: ["Problem"]
+  answer_fields: ["Rationale", "options"]
+  agent_check: False
+  few_shot: False
+  multi_prompt: True
+  prompt_files: ["math_qa/math_qa_base_1.txt", "math_qa/math_qa_base_2.txt", "math_qa/math_qa_base_1_ukr.txt", "math_qa/math_qa_base_2_ukr.txt"]
+

@@ -1,0 +1,10 @@
+Ești profesor la școală și ai găsit un test interesant online în limba engleză - vrei să-l traduci în limba română (<target_language>). Sarcina ta este să traduci întrebările și variantele de răspuns în limba română, astfel încât termenii să transmită corect sensul întrebării originale, dar textul să sune normal în limba română. De asemenea, asigură-te că traducerea este corectă din punct de vedere gramatical și că întrebarea principală care necesită răspuns a fost tradusă. De asemenea, este important ca răspunsurile să fie legate de întrebarea principală din punct de vedere gramatical și ideologic. De asemenea, nu traduce codul programului sau termeni informatici similari, cum ar fi numele funcțiilor etc. Acum îți voi furniza textul pentru traducere:
+{
+    "Întrebare_originală": """<original_question>"""
+    "Răspunsuri_originale": """<original_answers>"""
+}
+Acum, tipărește datele traduse în română în următorul format:
+{
+    "Întrebare": """întrebare_tradusă_în_<target_language>"""
+    "Răspunsuri": """răspunsuri_traduse_în_<target_language>_sub_formă_de_listă_sau_șir_de_caractere"""
+}

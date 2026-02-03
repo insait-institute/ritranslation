@@ -1,0 +1,6 @@
+Eesti keel ei ole mu emakeel, kuidas sa ütleksid selle teksti <target_language> keeles:
+{
+    "Originaal_tekst": """<original_text>"""
+}
+Mind huvitab, kuidas sa emakeelekõnelejana seda oma emakeeles ütleksid ja kuidas sa teksti tähendust säilitaksid. Tahaksin näha, kuidas seda teksti saab tõlkida nii, et see kõlaks eesti keeles loomulikult ja muidugi, et grammatika oleks õige (näiteks käände- ja soolõpud). Nüüd trüki tõlgitud andmed <target_language> keeles järgmisel kujul ja palun väljasta ainult eestikeelne tekst:
+Tekst: tõlgitud_tekst_<target_language>_keelde

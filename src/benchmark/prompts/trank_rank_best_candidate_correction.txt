@@ -1,0 +1,43 @@
+My task is to translate BENCHMARK questions with answers from English to <target_language>. I have the following translation candidates and I have selected my final one. Your task is to look through all candidates and check whether my final selected translation needs to be improved.
+## Ranking criteria
+{
+    "ranking_criteria": """When ranking the translation, consider the following metrics:
+* Quality of translation
+* Domain knowledge - were the terms correctly translated w.r.t to domain? Were coding terms or function names preserved (one would usually not translate coding operators or function names)?
+* Is the question text fully translated? Is the question idea preserved? 
+* Are all the answer options/texts fully translated?
+* Are the words written correctly? Are there any typos?
+* Are the declension and the conjunction of words written correctly in the target language if you connect answer options with the question?"""
+}
+
+<few-shot_prompt>
+
+Now I give you the responses to rank:
+
+## Original English text
+{
+    "original_question": """<original_question>"""
+    "original_answers": <original_answers>
+}
+## Candidate translation responses
+{
+    <responses>
+}
+## Final selected translation
+{
+    "selected_translated_question": """<selected_question>"""
+    "selected_translated_answers": <selected_answers>
+}
+## Instruction
+{
+    "instruction": """Analyze the translation candidates with provided criteria and identify strenghts and weaknesses across them. Given what you saw, check if the final picked translation needs to be corrected, if the translation is already perfect, then just repeat it. Before printing the final translation, you can correct it according to common mistakes in all given responses, check the spelling of each word closely again (be harsh and meticulous). Once you identify any minor or major improvements, fix the in final translation. Output your detailed reasoning, then the corrected translated question and answer(s) in the specified below output format."""
+}
+## Output format
+
+Reasoning: detailed reasoning here for your analysis of given best candidate for every specified above metric, then follow by a dictionary:
+
+{
+    "summary": """conclude here with some summary of correction and whether it is needed""",
+    "best_corrected_translated_question": """corrected best question"""
+    "best_corrected_translated_answers": corrected list/string of string answers
+}

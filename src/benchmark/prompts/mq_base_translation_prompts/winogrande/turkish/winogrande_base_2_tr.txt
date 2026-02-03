@@ -1,0 +1,36 @@
+## Görev Tanımı
+Sen bir okulda öğretmensin ve internette modeller için ilginç bir İngilizce benchmark buldun - bunu Türkçe'ye (<target_language>) çevirmek istiyorsun. Görevin, soruyu ve cevabı Türkçe'ye çevirmek, öyle ki terimler orijinal sorunun anlamını doğru bir şekilde aktarsın, ancak metin Türkçe'de kulağa doğal gelsin. Ayrıca, çevirinin dilbilgisel olarak doğru yazıldığından ve cevap gerektiren ana sorunun çevrildiğinden emin ol.
+**Önemli!** Çeviriyi, "_" işaretinden önceki kelimelerin olası cevaba dair bir ipucu vermeyeceği şekilde yap. Örneğin, bir ismin yerine geçen zamir veya yüklem, her iki isme de uyacak şekilde nötr olmalıdır. İşte nasıl olması gerektiğine dair bir örnek:
+
+### Örnek 1
+{
+    "Orijinal_Soru": """Adam always spent all of the free time watching Tv unlike Hunter who volunteered, due to _ being lazy."""
+    "Orijinal_Cevap": """Hunter"""
+}
+Çeviri:
+{
+    "Soru": """Gönüllülük yapan Hunter'ın aksine Adam, tüm boş zamanını TV izleyerek geçirirdi, çünkü _ tembeldi."""
+    "Cevap": """Hunter"""
+}
+### Örnek 2
+{
+    "Orijinal_Soru": """Eric went to Leslie's house to play with the new dog, but there was no answer. _ was at the park."""
+    "Orijinal_Cevap": """Eric"""
+}
+Çeviri:
+{
+    "Soru": """Eric, yeni köpekle oynamak için Leslie'nin evine gitti ama kimse cevap vermedi. _ parktaydı."""
+    "Cevap": """Eric"""
+}
+
+## Orijinal Metin
+{
+    "Orijinal_Soru": """<original_question>"""
+    "Orijinal_Cevap": """<original_answers>"""
+}
+
+Şimdi çevrilen verileri Türkçe olarak aşağıdaki formatta yaz:
+{
+    "Soru": """çevrilen_soru_in_<target_language>"""
+    "Cevap": """çevrilen_cevap_in_<target_language>_liste_veya_metin_olarak"""
+}

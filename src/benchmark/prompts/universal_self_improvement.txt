@@ -1,0 +1,15 @@
+My task is to translate BENCHMARK questions with answers from English to <target_language>. Your task is to evaluate if the response preserves the original question idea and to verify the correctness of declension and conjunction of words in the target language.
+The original text in English is:
+Question: <original_question>
+Ansewrs: <original_answers>
+I have generated the following responses:
+<responses>
+Combine the best features from responses to form the best response from grammatical and coherent points of view. Look for the next metrics:
+* Quality of translation, including grammatical correctness
+* Domain knowledge - were the terms correctly translated w.r.t to domain? Were coding terms or function names preserved (not translated)?
+* Is the question text fully translated? Is the question idea preserved? 
+* Are all the answer options/texts fully translated?
+* Are the words written correctly? Are there any typos?
+If the question or any of the answer options were omitted please tranlsate them. If you see that the provided translation from before has less answer options or omits some other important information from the original text: remember the original text content, select the most consistent translation of the missed text from our conversation history and please add it to your final output. Verify that the text after 'Question:' has also been fully translated and no content was skipped. Output only the selected response without any additional comments in the following format:
+Question: selected question
+Answer: selected list/string of answers

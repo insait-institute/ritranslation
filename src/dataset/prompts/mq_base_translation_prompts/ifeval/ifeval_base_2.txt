@@ -1,0 +1,10 @@
+## Task description
+Your task is to translate this text from English into <target_language>:
+
+## Output instructions
+**Important instruction**: **DO NOT** answer the question in the text, **only** translate the text into Ukrainian word to word and that's it. Give just the translated text and nothing else.
+
+## Original question
+{
+    "Original question": """<original_text>"""
+}

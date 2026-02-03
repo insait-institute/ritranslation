@@ -1,0 +1,5 @@
+Your task is to translate a question and the answer options from English into <target_language>, now I provide you the instructions:
+Think step-by-step, check if you included everything from the original text and preserved the idea, output only the translated text without your comments or reasoning. Now I provide you the text to translate:
+Original text: <original_text>
+Now format your output in <target_language> in the next form and please output only the translated content:
+Translation: your_translated_text_into_<target_language>

@@ -1,0 +1,7 @@
+My task is to translate a text from English to <target_language>. Your task is to evaluate if the response preserves the original text idea and to verify the correctness of declension and conjunction of words in the target language.
+The original text in English is:
+Original text: <original_text>
+I have generated the following responses:
+<responses>
+Select the most constistent response based on majority consensus. Verify that the text after 'Original text:' has also been fully translated and no content was skipped. Output only the selected response without any additional comments in the following format:
+Translation: selected translation

@@ -1,0 +1,10 @@
+Nie som rodený hovoriaci slovenského jazyka, ako by si povedal túto otázku a možnosti odpovedí v <target_language>:
+{
+    "Pôvodná_otázka": """<original_question>"""
+    "Pôvodné_odpovede": """<original_answers>"""
+}
+Zaujíma ma, ako by si to ako rodený hovoriaci povedal vo svojom rodnom jazyku, a tiež ako by si preložil možnosti odpovedí tak, aby zmyselovo zodpovedali otázke. Chcel by som vidieť, ako je možné preložiť tieto texty tak, aby to znelo prirodzene v slovenčine, a samozrejme, aby gramatika bola správna (napríklad pádové a rodové koncovky). Teraz vytlač preložené údaje na <target_language> v nasledujúcej forme a, prosím, zobraz len text v slovenčine:
+{
+    "Otázka": """preložená_otázka_v_<target_language>"""
+    "Odpovede": """preložené_odpovede_na_<target_language>_zoznamom_alebo_riadkom"""
+}

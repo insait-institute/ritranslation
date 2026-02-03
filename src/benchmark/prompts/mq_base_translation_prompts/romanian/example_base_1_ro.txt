@@ -1,0 +1,10 @@
+Nu sunt vorbitor nativ de limba română, cum ai formula această întrebare și variantele de răspuns în <target_language>:
+{
+    "Întrebare_originală": """<original_question>"""
+    "Răspunsuri_originale": """<original_answers>"""
+}
+Mă interesează cum ai spune asta în limba ta maternă, ca vorbitor nativ, și cum ai combina traducerea variantelor de răspuns cu întrebarea, din punct de vedere semantic. Aș dori să văd cum se pot traduce aceste texte astfel încât să sune natural în română și, bineînțeles, să fie corecte din punct de vedere gramatical (de exemplu, căderile și terminațiile de gen). Acum tipărește datele traduse în <target_language> în forma următoare și, te rog, afișează doar textul în română:
+{
+    "Întrebare": """întrebare_tradusă_în_<target_language>"""
+    "Răspunsuri": """răspunsuri_traduse_în_<target_language>_sub_formă_de_listă_sau_șir"""
+}

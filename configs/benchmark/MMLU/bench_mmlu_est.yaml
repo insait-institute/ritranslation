@@ -1,0 +1,32 @@
+task: "BENCHMARK"
+output_dir: "src/benchmark/data"
+translation_model:
+  name: "gpt-4o-mini-2024-07-18"
+  provider: "openai"
+  args: {
+    reasoning_level: "low"
+  }
+judge_model:
+  name: "gpt-4o-mini-2024-07-18"
+  provider: "openai"
+  args: {
+    reasoning_level: "low"
+  }
+task_config:
+  benchmark: 
+    name: "cais/mmlu"
+    subset: ["all"]
+    split: ["test", "validation", "dev"]
+  target_language: "Estonian"
+  method: "USI" # SC, USI, TRANK, BoN
+  max_workers: True
+  num_workers: 60
+  n_samples: 1
+  question_fields: ["question"]
+  answer_fields: ["choices"]
+  agent_check: False
+  few_shot: False
+  multi_prompt: True
+  save_to_hf: True
+  prompt_files: ["example_base_1.txt", "estonian/example_base_1_est.txt", "estonian/example_base_2_est.txt"]
+

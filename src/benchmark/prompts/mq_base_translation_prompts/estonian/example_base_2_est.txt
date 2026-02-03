@@ -1,0 +1,11 @@
+## Ülesande kirjeldus
+Sa oled koolis õpetaja ja leidsid internetist huvitava ingliskeelse eksami – sa tahad selle tõlkida eesti keelde (<target_language>). Sinu ülesanne on tõlkida küsimus ja vastusevariandid eesti keelde nii, et terminid annaksid õigesti edasi algse küsimuse tähenduse, kuid tekst kõlaks eesti keeles loomulikult. Samuti veendu, et tõlge oleks grammatiliselt õigesti kirjutatud, et põhiküsimus, mis nõuab vastust, oleks tõlgitud, ning on oluline, et vastused oleksid põhiküsimusega grammatiliselt ja sisuliselt seotud. Samuti ära tõlgi programmikoodi ega sarnaseid arvutitermineid, näiteks funktsioonide nimesid jne. Nüüd annan sulle tõlkimiseks teksti:
+{
+    "Originaal_küsimus": """<original_question>"""
+    "Originaalsed_vastused": """<original_answers>"""
+}
+Nüüd trüki tõlgitud andmed eesti keeles järgmises vormis:
+{
+    "Küsimus": """tõlgitud_küsimus_<target_language>_keelde"""
+    "Vastused": """tõlgitud_vastused_<target_language>_keelde_loendi_või_sõnena"""
+}

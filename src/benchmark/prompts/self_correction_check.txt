@@ -1,0 +1,13 @@
+Your task is to verify the translation of question and its answer options from English to <target_language>, now I provide you the instructions:  
+Think step-by-step, check if everything was included from the original question with answer options and the main question idea is preserved. Then verify the correctness of declension and conjunction of words in the target language. The translation may or may not be correct. Check if the necessary words to translate are indeed translated in <target_language>.
+<few-shot_prompt>
+Now I provide you the original question and the list of answer options to translate 
+Original question: <original_question>
+Original answers: <original_answers>
+Now I provide you the translated question and the list of answer options to verify: 
+Translated question: <translated_question>
+Translated answers: <translated_choices>
+Output only the verified text in <target_language> without your comments or reasoning, if the translation is correct then just repeat it. Now format your output in the next form: 
+If you see that the provided translation from before has less answer options or omits some other important information from the original text: remember the original text content, select the most consistent translation of the missed text from our conversation history and please add it to your final output. Preserve original question/answer type format (list for multiple options and plain text for string format). Verify that the text after 'Original question:' has also been fully translated and no content was skipped.
+Question: your_verified_question_into_<target_language> 
+Answers: verified_answers_in_<target_language>_list_or_string

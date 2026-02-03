@@ -1,0 +1,11 @@
+*Zone.Identifier*
+__pycache__/
+*.jsonl
+.vscode/
+credentials.py
+*.slurm
+notes.txt
+*.out
+*.log
+src/dataset/flores/*
+src/dataset/wmt/*

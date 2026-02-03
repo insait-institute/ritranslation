@@ -1,0 +1,6 @@
+Your task is to translate this text from English into <target_language>:
+{
+    "Original text": """<original_text>"""
+}
+Now format your output in <target_language> in the next form and please output only the translated content (fill the dictionary with translation):
+Text: your_translated_text_into_<target_language>

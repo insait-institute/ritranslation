@@ -1,0 +1,6 @@
+Si učiteľom v škole a našiel si zaujímavý text v angličtine na internete – chceš ho preložiť do slovenčiny (<target_language>). Tvojou úlohou je preložiť text do slovenčiny tak, aby termíny správne vyjadrovali význam pôvodného textu, ale text znel normálne v slovenčine. Uistite sa tiež, že preklad je gramaticky a ideologicky správny. Neprekladajte programový kód ani podobné počítačové termíny, ako sú názvy funkcií atď. Teraz vám poskytnem text na preklad:
+{
+    "Pôvodný text": """<original_text>"""
+}
+Teraz napíš preložené údaje do slovenčiny v nasledujúcej forme (vyplň slovník preloženým textom):
+Text: preložený_text_v_<target_language>

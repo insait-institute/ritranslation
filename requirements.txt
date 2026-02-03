@@ -1,0 +1,21 @@
+transformers
+datasets==3.6.0
+# torch  # Uncomment this line to install for local serving if needed
+# vllm # Uncomment this line to install local serving if needed
+huggingface_hub==0.24.0
+tqdm
+openai
+pydantic
+langcodes
+language_data
+gradio
+numpy
+pandas
+unbabel-comet==2.2.5
+poetry
+pyinputplus
+google-genai
+google-auth
+together
+openrouter
+pyyaml

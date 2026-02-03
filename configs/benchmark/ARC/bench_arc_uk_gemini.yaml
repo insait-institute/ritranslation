@@ -1,0 +1,28 @@
+task: "BENCHMARK"
+output_dir: "src/benchmark/data"
+translation_model:
+  name: "gemini-2.0-flash"
+  provider: "google"
+judge_model:
+  name: "gemini-2.0-flash"
+  provider: "google"
+task_config:
+  benchmark: 
+    name: "allenai/ai2_arc"
+    subset: ["ARC-Easy"]
+    split: ["test"]
+    n_entries: 100
+  target_language: "Ukrainian"
+  method: "USI" # SC, USI, TRANK, BoN
+  temperature_translator: 0.6
+  temperature_judge: 0.2
+  max_workers: True
+  num_workers: 1
+  n_samples: 1
+  question_fields: ["question"]
+  answer_fields: ["choices.text"]
+  agent_check: False
+  few_shot: False
+  multi_prompt: True
+  prompt_files: ["example_base_1.txt", "example_base_2.txt", "ukrainian/example_base_1_ukr.txt", "ukrainian/example_base_2_ukr.txt"]
+

@@ -1,0 +1,10 @@
+Jūs esate mokytojas mokykloje ir radote įdomų egzaminą anglų kalba internete – norite jį išversti į lietuvių kalbą (<target_language>). Jūsų užduotis – išversti klausimus ir atsakymų variantus į lietuvių kalbą taip, kad terminai teisingai perteiktų originalaus klausimo prasmę, bet tekstas skambėtų natūraliai lietuvių kalba. Taip pat įsitikinkite, kad vertimas yra gramatiškai teisingas ir kad pagrindinis klausimas, į kurį reikia atsakyti, yra išverstas. Taip pat svarbu, kad atsakymai būtų gramatiškai ir ideologiškai susiję su pagrindiniu klausimu. Taip pat neverčiok programinės įrangos kodo ar panašių kompiuterinių terminų, pvz., funkcijų pavadinimų ir pan. Dabar pateiksiu tekstą vertimui:
+{
+    'Originalus_klausimas': '''<original_question>'''
+    'Originalūs_atsakymai': '''<original_answers>'''
+}
+Dabar išspausdinkite išverstus duomenis lietuvių kalba tokia forma:
+{
+    'Klausimas': '''išverstas_klausimas_į_<target_language>'''
+    'Atsakymai': '''išversti_atsakymai_į_<target_language>_sąrašu_arba_eilute'''
+}

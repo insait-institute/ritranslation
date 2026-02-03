@@ -1,0 +1,29 @@
+task: "BENCHMARK"
+output_dir: "src/benchmark/data"
+translation_model:
+  name: "gpt-4o-mini-2024-07-18"
+  provider: "openai"
+  args: {
+    reasoning_level: "low"
+  }
+judge_model:
+  name: "gpt-4o-mini-2024-07-18"
+  provider: "openai"
+  args: {
+    reasoning_level: "low"
+  }
+task_config:
+  benchmark: 
+    name: "maveriq/bigbenchhard"
+    subset: ["web_of_lies"]
+    split: ["train"]
+  target_language: "Bulgarian"
+  method: "SC"  # SC, USI, TRANK, BoN
+  max_workers: True
+  num_workers: 1
+  n_samples: 5
+  question_fields: ["input"]
+  answer_fields: ["target"]
+  agent_check: True
+  few_shot: True
+  multi_prompt: False

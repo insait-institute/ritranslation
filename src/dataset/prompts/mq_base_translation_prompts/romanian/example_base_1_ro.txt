@@ -1,0 +1,6 @@
+Nu sunt vorbitor nativ de limba română, cum ai spune acest text în <target_language>:
+{
+    "Text original": """<original_text>"""
+}
+Mă interesează cum ai spune acest text în limba ta maternă și cum ai păstra sensul textului. Aș dori să văd cum se poate traduce acest text astfel încât să sune natural în limba română și, bineînțeles, să fie corect din punct de vedere gramatical (de exemplu, căderile și genurile). Acum, tipărește datele traduse în <target_language> în forma următoare și, te rog, afișează doar textul tradus în română:
+Text: text_tradus_în_<target_language>

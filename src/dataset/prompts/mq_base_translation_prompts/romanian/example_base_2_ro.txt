@@ -1,0 +1,6 @@
+Ești profesor la școală și ai găsit un text interesant online în limba engleză - vrei să îl traduci în limba română (<target_language>). Sarcina ta este să traduci textul în limba română astfel încât termenii să transmită corect sensul textului original, dar textul să sune normal în limba română. De asemenea, asigură-te că traducerea este corectă din punct de vedere gramatical și ideologic. De asemenea, nu traduce codul programului sau termeni informatici similari, cum ar fi numele funcțiilor etc. Acum îți voi furniza textul pentru traducere:
+{
+    "Textul original": """<original_text>"""
+}
+Acum, scrie datele traduse în limba română în forma următoare (completează dicționarul cu textul tradus):
+Text: text_tradus_în_<target_language>

@@ -1,0 +1,36 @@
+## Descrierea sarcinii
+Ești profesor la școală și ai găsit online un benchmark interesant în limba engleză pentru modele – vrei să-l traduci în limba română (<target_language>). Sarcina ta este să traduci întrebarea și variantele de răspuns în limba română, astfel încât termenii să transmită corect sensul întrebării originale, iar textul să sune natural în limba română. De asemenea, asigură-te că traducerea este corectă din punct de vedere gramatical și că întrebarea principală care necesită un răspuns este tradusă.
+**Important!** Tradu astfel încât cuvintele dinaintea "_" să nu ofere un indiciu despre posibilul răspuns, de exemplu, adaugă la adjectiv terminația pentru ambele genuri (de ex., "-ă") sau soluții similare; iată un exemplu despre cum ar trebui să fie:
+
+### Exemplul 1
+{
+    "Întrebare_originală": """Adam always spent all of the free time watching Tv unlike Hunter who volunteered, due to _ being lazy."""
+    "Răspuns_original": """Hunter"""
+}
+Traducere:
+{
+    "Întrebare": """Adam își petrecea mereu tot timpul liber la televizor, spre deosebire de Hunter, care era voluntar, deoarece _ a fost leneș(ă)."""
+    "Răspuns": """Hunter"""
+}
+### Exemplul 2
+{
+    "Întrebare_originală": """Eric went to Leslie's house to play with the new dog, but there was no answer. _ was at the park."""
+    "Răspuns_original": """Eric"""
+}
+Traducere:
+{
+    "Întrebare": """Eric a mers la casa lui Leslie să se joace cu noul câine, dar nu a răspuns nimeni. _ a fost în parc."""
+    "Răspuns": """Eric"""
+}
+
+## Text original
+{
+    "Întrebare_originală": """<original_question>"""
+    "Răspuns_original": """<original_answers>"""
+}
+
+Acum tipărește datele traduse în limba română în următoarea formă:
+{
+    "Întrebare": """întrebare_tradusă_în_<target_language>"""
+    "Răspuns": """răspuns_tradus_în_<target_language>_ca_listă_sau_șir"""
+}

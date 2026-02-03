@@ -1,0 +1,10 @@
+Aš nesu gimtakalbis lietuvių kalbos vartotojas, kaip tu pasakytum šį klausimą ir atsakymų variantus <target_language>:
+{
+    'Originalus_klausimas': '''<original_question>'''
+    'Originalūs_atsakymai': '''<original_answers>'''
+}
+Man įdomu, kaip tu, kaip kalbos vartotojas, pasakytum tai gimtąja kalba, taip pat kaip suderintum atsakymų variantų vertimą su klausimu pagal prasmę. Norėčiau pamatyti, kaip galima išversti šiuos tekstus, kad jie skambėtų natūraliai lietuviškai, ir, žinoma, kad gramatika būtų teisinga (pavyzdžiui, linksniai ir giminių galūnės). Dabar išspausdinkite išverstus duomenis į <target_language> tokia forma ir, prašau, pateikite tik tekstą lietuvių kalba:
+{
+    'Klausimas': '''išverstas_klausimas_į_<target_language>'''
+    'Atsakymai': '''išversti_atsakymai_į_<target_language>_sąrašu_arba_eilute'''
+}

@@ -1,0 +1,7 @@
+Your task is to translate a question and the answer options from English into <target_language>.
+Now I provide you the question and the list/string of answer options to translate:
+Original question: <original_question>
+Original answers: <original_answers> 
+
+Let's first come up with a list of experts you may want to consult for this problem and then immediately start solving it. Please only output a list of experts in English in form of:
+Experts: ['expert 1 name', 'expert 2 name', ...]

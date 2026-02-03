@@ -1,0 +1,11 @@
+My task is to translate a text from English to <target_language>. Your task is to evaluate if the response preserves the original text idea and to verify the correctness of declension and conjunction of words in the target language.
+The original text in English is:
+Original text: <original_text>
+I have generated the following responses:
+<responses>
+Combine the best features from responses to form the best response from grammatical and coherent points of view. Look for the next metrics:
+* Quality of translation, including grammatical correctness
+* Is the text fully translated? Is the text idea preserved?
+* Are the words written correctly? Are there any typos?
+Verify that the text after 'Original text:' has also been fully translated and no content was skipped. Output only the selected response without any additional comments in the following format:
+Translation: selected translation

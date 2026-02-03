@@ -1,0 +1,10 @@
+Si učiteľom v škole a našiel si zaujímavý online test z angličtiny – chceš ho preložiť do slovenčiny (<target_language>). Tvojou úlohou je preložiť otázky a možnosti odpovedí do slovenčiny tak, aby termíny správne vyjadrovali zmysel pôvodnej otázky, ale text znel normálne v slovenčine. Uistite sa tiež, že preklad je gramaticky správny a že hlavná otázka, na ktorú treba odpovedať, bola preložená. Je tiež dôležité, aby odpovede boli gramaticky a ideologicky spojené s hlavnou otázkou. Neprekladaj programový kód ani podobné počítačové termíny, ako sú názvy funkcií atď. Teraz ti poskytnem text na preklad:
+{
+    "Pôvodná_otázka": """<original_question>"""
+    "Pôvodné_odpovede": """<original_answers>"""
+}
+Teraz napíš preložené údaje do slovenčiny v nasledujúcej forme:
+{
+    "Otázka": """preložená_otázka_v_<target_language>"""
+    "Odpovede": """preložené_odpovede_v_<target_language>_zoznamom_alebo_riadkom"""
+}

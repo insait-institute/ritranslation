@@ -1,0 +1,98 @@
+I will provide two examples of how to rank translations:
+        
+**Example 1: Check spelling/correctness of words, gender-wise declination and grammatical cases** 
+
+## Original English text
+{
+    "original_question": """The regional lymphatic drainage of the left side of the tip of the tongue is to the"""
+    "original_answers": ['left submental lymph node.', 'left and right submental lymph nodes.', 'left submandibular lymph node.', 'left and right submandibular lymph nodes.']
+}
+## Candidate transaltion responses
+{
+  "response_id": 1,
+  "translated_question": """Регінарний лімфатичний дренаж лівої сторони кінчика язика проходить до""",
+  "translated_answers": ['лівого підпідборідного лімфатичного вузла.', 'лівого та правого підпідборідних лімфатичних вузлів.', 'лівого підщелепного лімфатичного вузла.', 'лівого та правого підщелепних лімфатичних вузлів.']
+},
+{
+  "response_id": 2,
+  "translated_question": """Регінарний лімфатичний дренаж лівої сторони кінчика язика проходить до""",
+  "translated_answers": ['лівий підборідного лімфатичного вузла.', 'лівих та правих підборідний лімфатичний вузлів.', 'лівого підщелепного лімфатичного вузла.', 'лівих та правих підщелепних лімфатичних вузлів.']
+},
+{
+  "response_id": 3,
+  "translated_question": """Регінальний лімфатичний дренаж лівого боку кінчика язика прямує до""",
+  "translated_answers": ['лівого підщелепного лімфатичного вузла.', 'лівих та правих підщелепних лімфатичних вузлів.', 'лівого підщелепного лімфатичного вузла.', 'лівих та правих підщелепних лімфатичних вузлів.']
+},
+{
+  "response_id": 4,
+  "translated_question": """Региональний лімфатичний дренаж лівого боку кінчика язика йде до""",
+  "translated_answers": ['лівого підборідного лімфатичного вузла.', 'лівих і правих підборідних лімфатичних вузлів.', 'лівого підщелепного лімфатичного вузла.', 'лівих і правих підщелепних лімфатичних вузлів.']
+}
+## Your Summary
+**Summary**: Response 4 is the best translation as it maintains the correct terminology, has a minor spelling error (only 1 letter "региональний" should be "регіональний"), and fully translates the question and answers. Responses 1, 2, and 3 have issues with the non-existing term "регінарний" and inconsistencies in pluralization. Also, Response 1 has incorrectly written term "підпідборідного", which should be "підборідного" and further, while Response 2 shows consistent incorrect adjective declination ("лівий підборідного" -> "лівого підборідного") etc.
+
+{
+    "summary": "Response 4 is the best translation as it maintains the correct terminology, has a minor spelling error (only 1 letter "региональний" should be "регіональний"), and fully translates the question and answers. Responses 1, 2, and 3 have issues with the non-existing term "регінарний" and inconsistencies in pluralization. Also, Response 1 has incorrectly written term "підпідборідного", which should be "підборідного" and further, while Response 2 shows consistent incorrect adjective declination ("лівий підборідного" -> "лівого підборідного") etc.",
+    "final_ranks": {"Response 1": "4th place", "Response 2": "3rd place", "Response 3": "2nd place", "Response 4": "1st place"},
+    "rankings_list": [4, 3, 2, 1],
+    "best_translation":
+        {
+            "best_translated_question": """Регіональний лімфатичний дренаж лівого боку кінчика язика йде до""",
+            "best_translated_answers": ['лівого підборідного лімфатичного вузла.', 'лівих і правих підборідних лімфатичних вузлів.', 'лівого підщелепного лімфатичного вузла.', 'лівих і правих підщелепних лімфатичних вузлів.']
+        }
+}
+        
+**Example 2: Translate with respect to context and question domain - look out for coding/math terms**  
+
+## Original English text
+{
+    "original_question": """The following procedure is intended to return the number of times the value val appears in the list myList. The procedure does not work as intended.
+ Line 1: PROCEDURE countNumOccurences(myList, val)
+ Line 2: {
+ Line 3: FOR EACH item IN myList
+ Line 4: {
+ Line 5: count 0
+ Line 6: IF(item = val)
+ Line 7: {
+ Line 8: count count + 1
+ Line 9: }
+ Line 10: }
+ Line 11: RETURN(count)
+ Line 12:}
+ Which of the following changes can be made so that the procedure will work as intended?"""
+    "original_answers": ['Changing line 6 to IF(item = count)', 'Changing line 6 to IF(myList[item] = val)', 'Moving the statement in line 5 so that it appears between lines 2 and 3', 'Moving the statement in line 11 so that it appears between lines 9 and 10']
+}
+## Candidate transaltion responses
+{
+  "response_id": 1,
+  "translated_question": """Наступна процедура призначена для повернення кількості появ значення val у списку myList. Процедура не працює так, як задумано.  Рядок 1: ПРОЦЕДУРА countNumOccurences(myList, val)  Рядок 2: {  Рядок 3: ДЛЯ КОЖНОГО елемента У myList  Рядок 4: {  Рядок 5: count 0  Рядок 6: ЯКЩО(елемент = val)  Рядок 7: {  Рядок 8: count count + 1  Рядок 9: }  Рядок 10: }  Рядок 11: ПОВЕРНУТИ(count)  Рядок 12:}  Які з наведених змін можна внести, щоб процедура працювала так, як задумано?""",
+  "translated_answers": ['Змінити рядок 6 на ЯКЩО(елемент = count)', 'Змінити рядок 6 на ЯКЩО(myList[елемент] = val)', "Перемістити оператор у рядку 5 так, щоб він з'явився між рядками 2 і 3", "Перемістити оператор у рядку 11 так, щоб він з'явився між рядками 9 і 10"]
+},
+{
+  "response_id": 2,
+  "translated_question": """Наступна процедура призначена для повернення кількості разів, коли значення val з'являється в списку myList. Процедура не працює належним чином.  Лінія 1: PROCEDURE countNumOccurences(myList, val)  Лінія 2: {  Лінія 3: ДЛЯ КОЖНОГО елемента В myList  Лінія 4: {  Лінія 5: count 0  Лінія 6: ЯКЩО(елемент = val)  Лінія 7: {  Лінія 8: count count + 1  Лінія 9: }  Лінія 10: }  Лінія 11: ПОВЕРНУТИ(count)  Лінія 12:}  Які з наведених змін можна внести, щоб процедура працювала належним чином?""",
+  "translated_answers": ['Змінити лінію 6 на ЯКЩО(елемент = count)', 'Змінити лінію 6 на ЯКЩО(myList[елемент] = val)', "Перемістити оператор з лінії 5 так, щоб він з'являвся між лініями 2 та 3", "Перемістити оператор з лінії 11 так, щоб він з'являвся між лініями 9 та 10"]
+},
+{
+  "response_id": 3,
+  "translated_question": """Наступна процедура призначена для повернення кількості разів, коли значення val з'являється у списку myList. Процедура не працює, як задумано.  Лінія 1: ПРОЦЕДУРА countNumOccurences(myList, val)  Лінія 2: {  Лінія 3: ДЛЯ КОЖНОГО елемента У myList  Лінія 4: {  Лінія 5: лічильник 0  Лінія 6: ЯКЩО(елемент = val)  Лінія 7: {  Лінія 8: лічильник лічильник + 1  Лінія 9: }  Лінія 10: }  Лінія 11: ПОВЕРНУТИ(лічильник)  Лінія 12:}  Які з наведених змін можуть бути внесені, щоб процедура працювала, як задумано?""",
+  "translated_answers": ['Змінити лінію 6 на ЯКЩО(елемент = лічильник)', 'Змінити лінію 6 на ЯКЩО(myList[елемент] = val)', "Перемістити оператор у лінії 5 так, щоб він з'являвся між лініями 2 і 3", "Перемістити оператор у лінії 11 так, щоб він з'являвся між лініями 9 і 10"]
+}
+## Your Summary
+Summary: Response 2 is the best due to its clarity and consistency, despite the minor issue with "count". Responses 1, 3, and 4 have similar issues but Response 3 introduces an inconsistency with the term "лічильник". Major issue across all the translation is the translation of coding commands, which should be preserved as they are and this should be fixed in the final corrected translation, Response 2 has this issue a bit less comparing to others. 
+
+Final ranks:
+- Response 2: 1st place
+- Response 1: 2nd place
+- Response 3: 3rd place
+
+{
+    "summary": "Response 2 is the best due to its clarity and consistency, despite the minor issue with 'count'. Responses 1 and 3 have similar issues but Response 3 introduces an inconsistency with the term 'лічильник'.",
+    "final_ranks": {"Response 1": "2nd place", "Response 2": "1st place", "Response 3": "3rd place"},
+    "rankings_list": [2, 1, 3],
+    "best_translation":
+        {
+            "best_translated_question": """Наступна процедура призначена для повернення кількості разів, коли значення val з'являється в списку myList. Процедура не працює належним чином.  Лінія 1: PROCEDURE countNumOccurences(myList, val)  Лінія 2: {  Лінія 3: FOR EACH item IN myList  Лінія 4: {  Лінія 5: count = 0  Лінія 6: IF(item = val)  Лінія 7: {  Лінія 8: count = count + 1  Лінія 9: }  Лінія 10: }  Лінія 11: RETURN(count)  Лінія 12:}  Які з наведених змін можна внести, щоб процедура працювала належним чином?""",
+            "best_translated_answers": ['Змінити лінію 6 на IF(item = count)', 'Змінити лінію 6 на IF(myList[item] = val)', "Перемістити оператор з лінії 5 так, щоб він з'являвся між лініями 2 та 3", "Перемістити оператор з лінії 11 так, щоб він з'являвся між лініями 9 та 10"]
+        }
+}

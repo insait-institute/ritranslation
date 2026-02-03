@@ -1,0 +1,26 @@
+Your task is to translate a text from English into <target_language>.
+
+I will provide three examples of what to look out for when translating texts: 
+
+Example 1: Translate with respect to context:
+Original text: ['Accurate but not precise', 'Precise but not accurate', 'Both accurate and precise', 'Neither accurate nor precise'] 
+Incorrectly translated text: ['Точний, але не точний', 'Точний, але не точний', 'Обидва точні та прецизійні', 'Ні точний, ні точний'] 
+Correctly translated text: ['Репрезентативні, але не 100% точні', 'Точні, але не репрезентативні.', 'Як репрезентативні, так і точні.', 'Ні точні, ні репрезентативні'] 
+        
+Example 2: Preserve meaning of terms depending on domain and context (like code - do not translate code function names!): 
+Original text: The following procedure is intended to return the number of times the value val appears in the list myList. The procedure does not work as intended.\n Line 1: PROCEDURE countNumOccurences(myList, val)\n Line 2: {\n Line 3: FOR EACH item IN myList\n Line 4: {\n Line 5: count 0\n Line 6: IF(item = val)\n Line 7: {\n Line 8: count count + 1\n Line 9: }\n Line 10: }\n Line 11: RETURN(count)\n Line 12:}\n Which of the following changes can be made so that the procedure will work as intended? 
+Incorrectly translated text: Наступна процедура призначена для повернення кількості разів, коли значення val з'являється у списку myList. Процедура не працює за призначенням.\n Рядок 1: PROCEDURE countNumOccurences(myList, val)\n Рядок 2: {\n Рядок 3: FOR EACH item IN myList\n Рядок 4: {\n Рядок 5: count 0\n Рядок 6: IF(item = val)\n Рядок 7: {\n Рядок 8: count count + 1\n Рядок 9: }\n Рядок 10: }\n Рядок 11: RETURN(count)\n Рядок 12:}\n Які з наведених нижче змін можна зробити, щоб процедура працювала належним чином?
+Correctly translated text: Наступна процедура призначена для повернення кількості разів, коли значення val з'являється у списку myList. Процедура не працює за призначенням.\n Рядок 1: PROCEDURE countNumOccurences(myList, val)\n Рядок 2: {\n Рядок 3: ДЛЯ КОЖНОГО елемента в myList\n Рядок 4: {\n Рядок 5: рахуємо 0\n Рядок 6: IF(item = val)\n Рядок 7: {\n Рядок 8: count count + 1\n Рядок 9: }\n Рядок 10: }\n Рядок 11: RETURN(count)\n Рядок 12:}\n Які з наведених нижче змін можна зробити, щоб процедура працювала належним чином?
+        
+Example 3: Check gender-wise declination and grammatical cases: 
+Original text: In a team tug of war, Ty did not pull as hard as he would have if he were pulling alone against one competitor. His behavior exemplifies 
+Incorrectly translated text: У командному перетягуванні каната Тай не тягнув так сильно, як би він тягнув, якби тягнув один проти одного суперника. Його поведінка є прикладом __________. 
+Correctly translated text: У командному перетягуванні каната Тай не тягнув так сильно, як би він тягнув, якби тягнув один проти одного суперника. Його поведінка є прикладом 
+Original text: ['deindividuation', 'groupthink', 'social loafing', 'bystander effect'] 
+Incorrectly translated text: ['деіндивідуація', 'групове мислення', 'соціальне лінування', 'ефект стороннього спостерігача'] 
+Correctly translated text: ['деіндивідуації', 'групового мислення', 'соціальної бездіяльності', 'ефекту стороннього спостерігача'] 
+
+Now I provide you the text to translate:
+Original text: <original_text>
+Now format your output in <target_language> in the next form and please output only the translated content:
+Text: your_translated_text_into_<target_language>

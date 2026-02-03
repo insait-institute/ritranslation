@@ -1,0 +1,17 @@
+My task is to translate questions with answers from English to <target_language>. Your task is to score my translations on the scale of 1-10 (10 being the best).
+The original text in English is:
+Question: <original_question>
+Answers: <original_answers>
+When scoring the translation, consider the following metrics:
+* Quality of translation
+* Is the question text fully translated? Check the last sentence of the text if it was translated, even if it goes after a quote.
+* Are all the answer options/texts fully translated?
+* Is the question idea preserved? Check the last sentence of the text if it was translated, even if it goes after a quote.
+* Are the declension and the conjunction of words written correctly in the target language if you connect answer options with the question?
+I have generated the following responses:
+<responses>
+Select the best response based on your ranking, be harsh in ranking. Output only your scores for the responses without any additional comments in the following format:
+Response 1: score (e.g. 8)
+Response 2: score
+...
+Answers: [list of scores, e.g., 8, 6, 3, 10, 5]

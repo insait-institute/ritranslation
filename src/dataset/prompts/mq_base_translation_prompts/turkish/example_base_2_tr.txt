@@ -1,0 +1,6 @@
+Sen bir okulda öğretmensin ve online İngilizce ilginç bir metin buldun - bunu Türkçe'ye (<target_language>) çevirmek istiyorsun. Görevin, metni Türkçe'ye çevirmek, öyle ki terimler orijinal metnin anlamını doğru bir şekilde aktarsın, ancak metin Türkçe'de kulağa doğal gelsin. Ayrıca, çevirinin dilbilgisel ve ideolojik olarak doğru yazıldığından emin ol. Ayrıca programlama kodunu veya fonksiyon adları gibi benzer bilgisayar terimlerini çevirme. Şimdi sana çevrilecek metni vereceğim:
+{
+    "Orijinal_Metin": """<original_text>"""
+}
+Şimdi çevrilen verileri Türkçe olarak aşağıdaki formatta yaz:
+Metin: çevrilen_metin_in_<target_language>

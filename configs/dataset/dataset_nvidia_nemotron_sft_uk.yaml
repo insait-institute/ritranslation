@@ -1,0 +1,31 @@
+task: "DATASET"
+output_dir: "src/dataset/data"
+translation_model:
+  name: "gpt-4o-mini-2024-07-18"
+  provider: "openai"
+  args: {
+    reasoning_level: "low"
+  }
+judge_model:
+  name: "gpt-4o-mini-2024-07-18"
+  provider: "openai"
+  args: {
+    reasoning_level: "low"
+  }
+task_config:
+  dataset: 
+    name: "nvidia/Llama-Nemotron-Post-Training-Dataset-v1"
+    subset: ["SFT"]
+    split: ["code"]
+  target_language: "Ukrainian"
+  method: "USI" # SC, USI, TRANK, BoN
+  max_workers: True
+  num_workers: 1
+  n_samples: 1
+  fields: ["question", "answer"]
+  agent_check: False
+  few_shot: False
+  multi_prompt: True
+  prompt_files: ["example_base_1.txt", "example_base_2.txt", "ukrainian/example_base_1_ukr.txt", "ukrainian/example_base_2_ukr.txt"]
+
+  

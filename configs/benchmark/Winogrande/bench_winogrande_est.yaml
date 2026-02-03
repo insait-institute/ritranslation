@@ -1,0 +1,27 @@
+task: "BENCHMARK"
+output_dir: "src/benchmark/data"
+translation_model:
+  name: "google/gemini-2.0-flash-001"
+  provider: "openrouter"
+judge_model:
+  name: "google/gemini-2.0-flash-001"
+  provider: "openrouter"
+task_config:
+  benchmark: 
+    name: "allenai/winogrande"
+    subset: ["winogrande_l"]
+    split: ["validation"]
+  target_language: "Estonian"
+  method: "USI" # SC, USI, TRANK, BoN
+  temperature_translator: 0.4
+  max_workers: True
+  num_workers: 50
+  n_samples: 1
+  question_fields: ["sentence"]
+  answer_fields: ["option1", "option2"]
+  agent_check: False
+  few_shot: False
+  multi_prompt: True
+  save_to_hf: True
+  prompt_files: ["winogrande/winogrande_base_1.txt", "winogrande/winogrande_base_2.txt", "winogrande/estonian/winogrande_base_2_est.txt"]
+

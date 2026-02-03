@@ -1,0 +1,6 @@
+Aš nesu gimtakalbis lietuvių kalbos vartotojas, kaip tu pasakytum šį tekstą <target_language>:
+{
+    "Originalus tekstas": """<original_text>"""
+}
+Man įdomu, kaip tu, kaip kalbos vartotojas, pasakytum tai gimtąja kalba, taip pat kaip išsaugotum teksto prasmę. Norėčiau pamatyti, kaip galima išversti šį tekstą taip, kad jis skambėtų natūraliai lietuviškai, ir, žinoma, kad gramatika būtų teisinga (pavyzdžiui, linksniai ir giminių galūnės). Dabar išspausdinkite išverstus duomenis į <target_language> tokia forma ir, prašau, pateikite tik į lietuvių kalbą išverstą tekstą:
+Tekstas: išverstas_tekstas_į_<target_language>

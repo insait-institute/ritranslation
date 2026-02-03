@@ -1,0 +1,7 @@
+Your task is to translate a question and the answer options from English into <target_language>, now I provide you the instructions:
+Think step-by-step, check if you included everything from the original question and answer options and preserved the idea, output only the translated text without your comments or reasoning. Translate the answers for this question while maintaining the connection between them and the question, also preserve original question/answer type format (list for multiple options and plain text for string format). Please make sure not to forget to translate the actual question, even if it is at the end of the big text, translate the full content line by line. Now I provide you the question and the list of answer options to translate:
+Original question: <original_question>
+Original answers: <original_answers>
+Now format your output in <target_language> in the next form and please output only the translated content:
+Question: your_translated_question_into_<target_language>
+Answers: translated_answers_in_<target_language>_list_or_string

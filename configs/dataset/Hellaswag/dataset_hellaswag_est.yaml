@@ -1,0 +1,25 @@
+task: "DATASET"
+output_dir: "src/dataset/data"
+translation_model:
+  name: "google/gemini-2.0-flash-001"
+  provider: "openrouter"
+judge_model:
+  name: "google/gemini-2.0-flash-001"
+  provider: "openrouter"
+task_config:
+  dataset: 
+    name: "Rowan/hellaswag"
+    subset: [""]
+    split: ["validation"]
+  target_language: "Estonian"
+  method: "USI" # SC, USI, TRANK, BoN
+  max_workers: True
+  num_workers: 1
+  n_samples: 1
+  fields: ["ctx_a", "ctx_b"]
+  agent_check: False
+  few_shot: False
+  multi_prompt: True
+  save_to_hf: True
+  prompt_files: ["example_base_1.txt", "example_base_2.txt", "estonian/example_base_1_est.txt", "estonian/example_base_2_est.txt"]
+

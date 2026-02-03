@@ -1,0 +1,10 @@
+Ben anadili Türkçe olmayan biriyim, bu soruyu ve cevap seçeneklerini <target_language> dilinde nasıl söylerdin:
+{
+    "Orijinal_Soru": """<original_question>"""
+    "Orijinal_Cevaplar": """<original_answers>"""
+}
+Bir ana dil konuşmacısı olarak bunu kendi dilinde nasıl söyleyeceğini ve cevap seçeneklerinin çevirisini soruyla nasıl anlamlı bir şekilde birleştireceğini merak ediyorum. Bu metinlerin Türkçe kulağa doğal gelecek şekilde nasıl çevrilebileceğini ve tabii ki dilbilgisinin de doğru olmasını (örneğin, durum ve cinsiyet ekleri) görmek isterim. Şimdi çevrilen verileri <target_language> dilinde aşağıdaki formatta yaz ve lütfen sadece Türkçe metni çıkar:
+{
+    "Soru": """çevrilen_soru_in_<target_language>"""
+    "Cevaplar": """çevrilen_cevaplar_in_<target_language>_liste_veya_metin_olarak"""
+}

@@ -1,0 +1,10 @@
+Your task is to translate a question and the answer options from English into <target_language>, now I provide you the text to translate:
+{
+    "Original_question": """<original_question>"""
+    "Original_answer": """<original_answers>"""
+}
+If the answer options are separated by letters, leave the original version in **English (a, b, c, d, e)**, DO NOT USE Cyrillic (а,б,в,г,д). This is important - please make sure that the original format of question and answer in the end (if provided) are preserved. Please double check that your final answer is included in the final translation. Now format your output in <target_language> in the next form and please output only the translated content:
+{
+    "Question": """your_translated_question_into_<target_language>"""
+    "Answer": """translated_answer_in_<target_language>"""
+}

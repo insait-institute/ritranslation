@@ -1,0 +1,39 @@
+## Opis úlohy
+Nie som rodený hovorca slovenčiny, zaujíma ma, ako by si povedal jednu otázku a možnosť odpovede z benchmarku do <target_language>.
+
+## Pokyny na preklad
+Zaujíma ma, ako by si to ty ako rodený hovorca povedal vo svojom materinskom jazyku, a tiež, ako by si zmysluplne spojil preklad možností odpovedí s otázkou. Chcel by som vidieť, ako sa dajú tieto texty preložiť tak, aby to znelo prirodzene po slovensky, a, samozrejme, aby bola gramatika správna (napríklad pádové koncovky). **Dôležité!** Prelož to tak, aby slová pred "_" nenapovedali možnú odpoveď. Napríklad, pridaj k prídavnému menu koncovky pre všetky rody (-ý/-á/-é/-í) alebo podobné, taktiež vždy použi zámená on/ona/ono/oni namiesto jedného konkrétneho; tu je príklad, ako by to malo vyzerať:
+
+### Príklad 1
+{
+    "Pôvodná_otázka": """Adam always spent all of the free time watching Tv unlike Hunter who volunteered, due to _ being lazy."""
+    "Pôvodná_odpoveď": """Hunter"""
+}
+Preklad:
+{
+    "Otázka": """Adam vždy trávil všetok voľný čas pozeraním televízie na rozdiel od Huntera, ktorý bol dobrovoľníkom, pretože _ bo(-l/-la/-lo/-li) leniv(-ý/-á/-é/-í)."""
+    "Odpoveď": """Hunter"""
+}
+### Príklad 2
+{
+    "Pôvodná_otázka": """Eric went to Leslie's house to play with the new dog, but there was no answer. _ was at the park."""
+    "Pôvodná_odpoveď": """Eric"""
+}
+Preklad:
+{
+    "Otázka": """Eric išiel do Leslieho domu, aby sa pohral s novým psom, ale nikto neotváral. _ bo(-l/-la/-lo/-li) v parku."""
+    "Odpoveď": """Eric"""
+}
+
+## Pôvodný text
+{
+    "Pôvodná_otázka": """<original_question>"""
+    "Pôvodná_odpoveď": """<original_answers>"""
+}
+
+## Pokyny na formátovanie
+Teraz vypíš preložené dáta do <target_language> v nasledujúcej forme a, prosím, vypíš iba text v slovenčine:
+{
+    "Otázka": """preložená_otázka_v_<target_language>"""
+    "Odpoveď": """preložená_odpoveď_v_<target_language>"""
+}

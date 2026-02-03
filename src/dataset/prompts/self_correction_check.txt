@@ -1,0 +1,10 @@
+Your task is to verify the translation of a text from English to <target_language>, now I provide you the instructions:  
+Think step-by-step, check if everything was included from the original text and the main text idea is preserved. Then verify the correctness of declension and conjunction of words in the target language. The translation may or may not be correct. Check if the necessary words to translate are indeed translated in <target_language>.
+<few-shot_prompt>
+Now I provide you the original text to translate 
+Original text: <original_text>
+Now I provide you the translated text to verify: 
+Translated text: <translated_text>
+Output only the verified text in <target_language> without your comments or reasoning, if the translation is correct then just repeat it. Now format your output in the next form: 
+Verify that the text after 'Original text:' has also been fully translated and no content was skipped.
+Translation: your_verified_question_into_<target_language> 

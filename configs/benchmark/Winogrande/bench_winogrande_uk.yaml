@@ -1,0 +1,32 @@
+task: "BENCHMARK"
+output_dir: "src/benchmark/data"
+translation_model:
+  name: "gpt-4o-2024-11-20"
+  provider: "openai"
+  args: {
+    reasoning_level: "low"
+  }
+judge_model:
+  name: "gpt-4o-2024-11-20"
+  provider: "openai"
+  args: {
+    reasoning_level: "low"
+  }
+task_config:
+  benchmark: 
+    name: "allenai/winogrande"
+    subset: ["winogrande_l"]
+    split: ["validation"]
+  target_language: "Ukrainian"
+  method: "USI" # SC, USI, TRANK, BoN
+  max_workers: True
+  num_workers: 50
+  n_samples: 1
+  question_fields: ["sentence"]
+  answer_fields: ["option1", "option2"]
+  agent_check: False
+  few_shot: False
+  multi_prompt: True
+  save_to_hf: True
+  prompt_files: ["winogrande/winogrande_base_1.txt", "winogrande/winogrande_base_2.txt", "winogrande/ukrainian/winogrande_base_2_ukr.txt"]
+

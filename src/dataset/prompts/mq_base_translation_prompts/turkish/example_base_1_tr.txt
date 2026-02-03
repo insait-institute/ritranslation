@@ -1,0 +1,6 @@
+Ben anadili Türkçe olmayan biriyim, bu metni <target_language> dilinde nasıl söylerdin:
+{
+    "Orijinal_Metin": """<original_text>"""
+}
+Bir ana dil konuşmacısı olarak bunu kendi dilinde nasıl söyleyeceğini ve metnin anlamını nasıl koruyacağını merak ediyorum. Bu metnin Türkçe kulağa doğal gelecek şekilde nasıl çevrilebileceğini ve tabii ki dilbilgisinin de doğru olmasını (örneğin, durum ve cinsiyet ekleri) görmek isterim. Şimdi çevrilen verileri <target_language> dilinde aşağıdaki formatta yaz ve lütfen sadece Türkçe'ye çevrilmiş metni çıkar:
+Metin: çevrilen_metin_in_<target_language>

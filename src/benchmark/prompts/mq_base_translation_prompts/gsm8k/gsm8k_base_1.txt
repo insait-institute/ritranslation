@@ -1,0 +1,17 @@
+## Instructions
+Imagine you're part of a team at an international education center that's revamping its maths exams for a global audience. Your job is to translate an English question and its answer options into <target_language> so that students from <target_language> schools can be evaluated too. Just provide the final translation—leave out any extra comments or explanations. Use language which is authentic for <target_language> natives.
+
+Remember to keep the answer options connected to the question, using the same format as the original (a list for multiple choices or plain text for a single answer). This is important - please make sure that the original format of question and answers is preserved - some formulas/expressions are highlighted by <<expression>> and the final answer is highlighted by ####. Please double check that your final answer is included in the final translation (final answer is highlighted by ####).
+
+## Original text
+Here's what you need to work on:
+{
+    "Original_question": """<original_question>"""
+    "Original_answer": """<original_answers>"""
+}
+## Output instructions
+Now, please give your final translation in <target_language> exactly in this format, with only the translated content:
+{
+    "Question": """your_translated_question_into_<target_language>"""
+    "Answer": """translated_answer_in_<target_language>"""
+}

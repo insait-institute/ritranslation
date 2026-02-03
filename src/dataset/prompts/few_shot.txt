@@ -1,0 +1,15 @@
+I will provide three examples of what to look out for when translating texts: 
+Example 1: Check gender-wise declination and grammatical cases: 
+Original text: In a team tug of war, Ty did not pull as hard as he would have if he were pulling alone against one competitor. His behavior exemplifies 
+Translated text: У командному перетягуванні каната Тай не тягнув так сильно, як би він тягнув, якби тягнув один проти одного суперника. Його поведінка є прикладом __________. 
+Corrected text: У командному перетягуванні каната Тай не тягнув так сильно, як би він тягнув, якби тягнув один проти одного суперника. Його поведінка є прикладом 
+        
+Example 2: Do not fill missing words from original text: 
+Original text: Let suppose a search box of an application can take at most 200 words, and you’ve inserted more than that and pressed the search button; the system crashes. Usually this is because of limited __________ 
+Translated text: Припустимо, що поле пошуку в додатку може приймати максимум 200 слів, а ви ввели більше і натиснули кнопку пошуку; система зривається. Зазвичай це відбувається через обмежену пам'ять  
+Corrected text: Припустимо, що поле пошуку в додатку може приймати максимум 200 слів, а ви ввели більше і натиснули кнопку пошуку; система зривається. Зазвичай це відбувається через обмежений/е/у __________  
+        
+Example 3: Translate with respect to context:  
+Original text: ['Accurate but not precise', 'Precise but not accurate', 'Both accurate and precise', 'Neither accurate nor precise'] 
+Translated text: ['Точний, але не точний', 'Точний, але не точний', 'Обидва точні та прецизійні', 'Ні точний, ні точний'] 
+Correctled text: ['Репрезентативні, але не 100% точні', 'Точні, але не репрезентативні.', 'Як репрезентативні, так і точні.', 'Ні точні, ні репрезентативні'] 

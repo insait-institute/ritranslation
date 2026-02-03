@@ -1,0 +1,10 @@
+Eesti keel ei ole mu emakeel, kuidas sa ütleksid selle küsimuse ja vastusevariandid <target_language> keeles:
+{
+    "Originaal_küsimus": """<original_question>"""
+    "Originaalsed_vastused": """<original_answers>"""
+}
+Mind huvitab, kuidas sa emakeelekõnelejana seda oma emakeeles ütleksid ja ka see, kuidas sa tähenduslikult ühendaksid vastusevariantide tõlke küsimusega. Tahaksin näha, kuidas neid tekste saab tõlkida nii, et see kõlaks eesti keeles loomulikult ja muidugi, et grammatika oleks õige (näiteks käände- ja soolõpud). Nüüd trüki tõlgitud andmed <target_language> keeles järgmisel kujul ja palun väljasta ainult eestikeelne tekst:
+{
+    "Küsimus": """tõlgitud_küsimus_<target_language>_keelde"""
+    "Vastused": """tõlgitud_vastused_<target_language>_keelde_loendi_või_sõnena"""
+}

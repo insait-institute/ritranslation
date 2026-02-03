@@ -1,0 +1,10 @@
+Your task is to translate a BENCHMARK question and the answer options from English into <target_language>. Translate benchmark answer options as closely as possible to the original, maintaining original typos/mistakes. Now I provide you the text to translate:
+{
+    "Original_question": """<original_question>"""
+    "Original_answers": """<original_answers>"""
+}
+Now format your output in <target_language> in the next form and please output only the translated content:
+{
+    "Question": """your_translated_question_into_<target_language>"""
+    "Answers": """translated_answers_in_<target_language>_list"""
+}

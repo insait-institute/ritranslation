@@ -1,0 +1,39 @@
+## Užduoties aprašymas
+Lietuvių kalba nėra mano gimtoji, todėl man įdomu, kaip tu pasakytum vieną klausimą ir atsakymo variantą iš etaloninio testo <target_language> kalba.
+
+## Vertimo instrukcijos
+Man įdomu, kaip tu, kaip gimtakalbis, tai pasakytum savo gimtąja kalba ir kaip prasmingai sujungtum atsakymų vertimą su klausimu. Norėčiau pamatyti, kaip galima išversti šiuos tekstus, kad jie skambėtų natūraliai lietuviškai ir, žinoma, kad gramatika būtų teisinga (pavyzdžiui, linksnių galūnės). **Svarbu!** Versk taip, kad žodžiai prieš „_“ nesufleruotų galimo atsakymo, pavyzdžiui, prie būdvardžio pridėk visų giminių galūnes (-us/-i) arba panašiai; štai pavyzdys, kaip tai turėtų atrodyti:
+
+### 1 pavyzdys
+{
+    "Originalus_klausimas": """Adam always spent all of the free time watching Tv unlike Hunter who volunteered, due to _ being lazy."""
+    "Originalus_atsakymas": """Hunter"""
+}
+Vertimas:
+{
+    "Klausimas": """Adamas visada leisdavo visą laisvalaikį žiūrėdamas televizorių, kitaip nei Hunteris, kuris savanoriavo, nes _ buvo ting(-us/-a)."""
+    "Atsakymas": """Hunteris"""
+}
+### 2 pavyzdys
+{
+    "Originalus_klausimas": """Eric went to Leslie's house to play with the new dog, but there was no answer. _ was at the park."""
+    "Originalus_atsakymas": """Eric"""
+}
+Vertimas:
+{
+    "Klausimas": """Erikas nuėjo į Lesli namus pažaisti su nauju šunimi, bet niekas neatsiliepė. _ buvo parke."""
+    "Atsakymas": """Erikas"""
+}
+
+## Originalus tekstas
+{
+    "Originalus_klausimas": """<original_question>"""
+    "Originalus_atsakymas": """<original_answers>"""
+}
+
+## Formatavimo nurodymai
+Dabar pateik išverstus duomenis <target_language> kalba tokia forma ir, prašau, išvesk tik tekstą lietuvių kalba:
+{
+    "Klausimas": """išverstas_klausimas_į_<target_language>"""
+    "Atsakymas": """išverstas_atsakymas_į_<target_language>"""
+}

@@ -1,0 +1,6 @@
+Sa oled koolis õpetaja ja leidsid internetist huvitava ingliskeelse teksti – sa tahad selle tõlkida eesti keelde (<target_language>). Sinu ülesanne on tõlkida tekst eesti keelde nii, et terminid annaksid õigesti edasi algse teksti tähenduse, kuid tekst kõlaks eesti keeles loomulikult. Samuti veendu, et tõlge oleks grammatiliselt ja sisuliselt korrektne. Ära tõlgi ka programmikoodi ega sarnaseid arvutitermineid, näiteks funktsioonide nimesid jne. Nüüd annan sulle tõlkimiseks teksti:
+{
+    "Originaal_tekst": """<original_text>"""
+}
+Nüüd trüki tõlgitud andmed eesti keeles järgmises vormis (täida sõnastik tõlgitud tekstiga):
+Tekst: tõlgitud_tekst_<target_language>_keelde

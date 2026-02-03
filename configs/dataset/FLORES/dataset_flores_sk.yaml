@@ -1,0 +1,31 @@
+task: "DATASET"
+output_dir: "src/dataset/data/flores/sk"
+translation_model:
+  name: "gpt-4o-mini-2024-07-18"
+  provider: "openai"
+  args: {
+    reasoning_level: "low"
+  }
+judge_model:
+  name: "gpt-4o-mini-2024-07-18"
+  provider: "openai"
+  args: {
+    reasoning_level: "low"
+  }
+task_config:
+  dataset: 
+    name: "gsarti/flores_101"
+    subset: ["eng"]
+    split: ["devtest"]
+  target_language: "Slovak"
+  method: "TRANK" # SC, USI, TRANK, BoN
+  max_workers: True
+  num_workers: 70
+  n_samples: 5
+  fields: ["sentence"]
+  agent_check: False
+  few_shot: False
+  multi_prompt: True
+  prompt_files: ["example_base_1.txt", "example_base_2.txt", "example_base_3.txt", "slovak/example_base_1_sk.txt", "slovak/example_base_2_sk.txt"]
+
+  

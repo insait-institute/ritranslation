@@ -1,0 +1,10 @@
+My task is to translate questions with answers from English to <target_language>. Your task is to evaluate if the response preserves the original question idea and to verify the correctness of declension and conjunction of words in the target language.
+The original text in English is:
+Question: <original_question>
+Ansewrs: <original_answers>
+I have generated the following responses:
+<responses>
+Select the most constistent response based on majority consensus. If the question or any of the answer options were omitted please tranlsate them. Output only the selected response without any additional comments in the following format:
+If you see that the provided translation from before has less answer options or omits some other important information from the original text: remember the original text content, select the most consistent translation of the missed text from our conversation history and please add it to your final output. Verify that the text after 'Question:' has also been fully translated and no content was skipped.
+Question: selected question
+Answer: selected list/string of answers

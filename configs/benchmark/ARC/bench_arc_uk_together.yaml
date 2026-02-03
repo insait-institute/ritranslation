@@ -1,0 +1,25 @@
+task: "BENCHMARK"
+output_dir: "src/benchmark/data"
+translation_model:
+  name: "meta-llama/Llama-3.3-70B-Instruct-Turbo"
+  provider: "together"
+judge_model:
+  name: "meta-llama/Llama-3.3-70B-Instruct-Turbo"
+  provider: "together"
+task_config:
+  benchmark: 
+    name: "allenai/ai2_arc"
+    subset: ["ARC-Easy"]
+    split: ["test"]
+  target_language: "Ukrainian"
+  method: "USI" # SC, USI, TRANK, BoN
+  max_workers: False
+  num_workers: 1
+  n_samples: 1
+  question_fields: ["question"]
+  answer_fields: ["choices.text"]
+  agent_check: False
+  few_shot: False
+  multi_prompt: True
+  prompt_files: ["example_base_1.txt", "example_base_2.txt", "ukrainian/example_base_1_ukr.txt", "ukrainian/example_base_2_ukr.txt"]
+

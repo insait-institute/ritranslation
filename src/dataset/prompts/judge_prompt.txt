@@ -1,0 +1,32 @@
+## Current User Query 
+<|begin_of_query|> 
+{"instruction": Your task is compare two translation from from English to Ukrainian and compare their advantages and disadvantages. Lastly, you have to pick one of three choices: A is better, B is better or they are equal.}
+<|end_of_query|> 
+## Original text (English)
+{og_text}
+## Translation A (Ukrainian)
+<|begin_of_translation_A|>
+{output_1}
+ <|end_of_translation_A|> 
+## Translation B (Ukrainian)
+<|begin_of_translation_B|>
+{output_2}
+<|end_of_translation_B|> 
+# Evaluation 
+## Rules 
+You should compare the above two translations from English to Ukrainian based on your analysis of the user queries. You should first write down your analysis and the checklist that you used for the evaluation, and then provide your assessment according to the checklist. There are two choices to give your final assessment: ["A+", "B+",], which correspond to the following meanings:
+- `A+`: Translation A is better than Translation B. 
+- `B+`: Translation B is better than Translation A.
+- `T=`: Translation A and Translation B are equally good. Tie.
+## Output Format 
+First, please output your analysis for each model translation from English to Ukrainian, and then summarize your assessment to three aspects: "reason A>B", and "reason B>A", and finally make your choice for the final assessment. Please provide your evaluation results in the following json format (starting with {{ and ending with }} ), with no quotes around the curly brackets by filling in the placeholders in []: 
+{{ 
+           "analysis_of_A": "[analysis of Translation A]", 
+           "analysis_of_B": "[analysis of Translation B]", 
+           "reason_of_A_equals_B": "[where Translation A and B perform equally well]",
+           "reason_of_A_better_than_B": "[where Translation A is better than Translation B]", 
+           "reason_of_B_better_than_A": "[where Translation B is better than Translation A]",  
+           "choice": "[A+, B+ or T=]" 
+}}
+Your translation should be a valid json dictionary following exactly this format.
+## Your answer:

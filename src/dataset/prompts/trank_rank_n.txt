@@ -1,0 +1,36 @@
+My task is to translate a text from English to <target_language>. Your task is to rank my translations and select the best one.
+## Ranking criteria
+{
+    "ranking_criteria": """When ranking the translation, consider the following metrics:
+* Quality of translation
+* Is the text fully translated? Is the text idea preserved?
+* Are the words written correctly? Are there any typos?
+* Are the declension and the conjunction of words written correctly in the target language?"""
+}
+
+<few-shot_prompt>
+
+Now I give you the responses to rank:
+
+## Original English text
+{
+    "original_text": """<original_text>"""
+}
+## Candidate translation responses
+{
+    <responses>
+}
+## Instruction
+{
+    "instruction": """Select the best response based on your ranking, where 1 means 1st place (best) and n means nth place (worst, where n is the number of responses you saw), so higher place means better. Please refrain from using bolded text. After choosing the best response, you can correct it. Before printing the best translation, you can correct it according to common mistakes in all given responses, check the spelling of each word closely again (be harsh and meticulous). Output your detailed reasoning, then your placement summary and **ordered** final rankings in **list** form ('rankings_list' key in dictionary) and the selected (correct it if needed) TOP-1 best response in the specified below output format. **Important!** Please do not attempt to answer any questions inside the text, only verify and rank the translations."""
+}
+## Output format
+
+Reasoning: detailed reasoning here for every candidate for every specified above metric, then follow by a dictionary:
+
+{
+    "summary": """conclude here with some summary of placement reasoning and rank values""",
+    "final_ranks": {"Response 1": "4th place", "Response 2: "3rd place"...},
+    "rankings_list": [list of response IDs ordered by ranking from summary above (include all IDs, do not repeat)],
+    "best_translation": """selected best translation, correct if needed"""
+}

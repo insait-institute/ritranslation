@@ -1,0 +1,6 @@
+Jūs esate mokytojas mokykloje ir radote įdomų tekstą anglų kalba internete – norite jį išversti į lietuvių kalbą (<target_language>). Jūsų užduotis – išversti tekstą į lietuvių kalbą taip, kad terminai teisingai perteiktų originalaus teksto prasmę, bet tekstas skambėtų natūraliai lietuvių kalba. Taip pat įsitikinkite, kad vertimas yra gramatiškai teisingas ir ideologiškai tinkamas. Taip pat neversti programinės įrangos kodo ar panašių kompiuterinių terminų, pvz., funkcijų pavadinimų ir pan. Dabar pateiksiu jums tekstą vertimui:
+{
+    "Originalus tekstas": """<original_text>"""
+}
+Dabar įrašykite išverstus duomenis lietuvių kalba tokia forma (užpildykite žodyną išverstu tekstu):
+Tekstas: išverstas_tekstas_į_<target_language>

@@ -1,0 +1,15 @@
+My task is to translate texts from English to <target_language>. Your task is to score my translations on the scale of 1-10 (10 being the best).
+The original text in English is:
+Original text: <original_text>
+When scoring the translation, consider the following metrics:
+* Quality of translation
+* Is the text fully translated?
+* Is the text idea preserved?
+* Are the declension and the conjunction of words written correctly in the target language?
+I have generated the following responses:
+<responses>
+Select the best response based on your ranking, be harsh in ranking. Output only your scores for the responses without any additional comments in the following format:
+Response 1: score (e.g. 8)
+Response 2: score
+...
+Scores: [list of scores, e.g., 8, 6, 3, 10, 5]

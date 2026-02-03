@@ -1,0 +1,35 @@
+task: "DATASET"
+output_dir: "src/dataset/data/wmt/bg"
+translation_model:
+  name: "gpt-4o-mini-2024-07-18"
+  provider: "openai"
+  args: {
+    reasoning_level: "low"
+  }
+judge_model:
+  name: "gpt-4o-mini-2024-07-18"
+  provider: "openai"
+  args: {
+    reasoning_level: "low"
+  }
+task_config:
+  dataset: 
+    name: "google/wmt24pp"
+    subset: ["en-bg_BG"]
+    split: ["train"]
+    # n_entries: 700
+  target_language: "Bulgarian"
+  method: "USI" # SC, USI, TRANK, BoN
+  temperature_translator: 0.7
+  temperature_judge: 0.1
+  max_workers: True
+  num_workers: 1
+  n_samples: 1
+  fields: ["source"]
+  agent_check: False
+  few_shot: False
+  multi_prompt: True
+  save_to_hf: False
+  prompt_files: ["example_base_1.txt", "example_base_2.txt", "example_base_3.txt", "bulgarian/example_base_1_bg.txt", "bulgarian/example_base_2_bg.txt"]
+
+  

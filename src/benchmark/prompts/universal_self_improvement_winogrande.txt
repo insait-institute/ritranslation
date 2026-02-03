@@ -1,0 +1,43 @@
+## Task description
+My task is to translate BENCHMARK questions with answers from English to <target_language>. Your task is to evaluate if the response preserves the original question idea and to verify the correctness of declension and conjunction of words in the target language.
+## Original text
+The original text in English is:
+Question: <original_question>
+Ansewrs: <original_answers>
+## Responses
+I have generated the following responses:
+<responses>
+## Instructions
+Combine the best features from responses to form the best response from grammatical and coherent points of view. Look for the next metrics:
+* Is the question text fully translated? Is the question idea preserved? 
+* Is it gender-neutral (only around missing word "_")?
+* Are the words written correctly? Are there any typos?
+## Important instructions
+**Please** fix gender-related verbs/adjectives/pronouns around missing part "_" as gender-neutral - use all possible options, like he/she/it/they (він/вона/воно/вони in Ukrainian), so that no one can guess answers to this benchmarks just from the gender of words in question text.
+Here are some examples:
+
+### Example 1
+{
+    "Оригінальне_питання": """Adam always spent all of the free time watching Tv unlike Hunter who volunteered, due to _ being lazy."""
+    "Оригінальна_відповідь": """Hunter"""
+}
+Translation:
+{
+    "Питання": """Адам завжди проводив весь вільний час перед телевізором, на відміну від Хантера, який був волонтером, тому що _ бу(-в/-ла/-ло/-ли) лінив(-ий/-а/-е/-і)."""
+    "Відповідь": """Хантер"""
+}
+### Example 2
+{
+    "Оригінальне_питання": """Eric went to Leslie's house to play with the new dog, but there was no answer. _ was at the park."""
+    "Оригінальна_відповідь": """Eric"""
+}
+Translation:
+{
+    "Питання": """Ерік пішов до будинку Леслі, щоб погратися з новим собакою, але ніхто не відповів. _ бу(-в/-ла/-ло/-ли) у парку."""
+    "Відповідь": """Ерік"""
+}
+
+## Output format instructions
+Output only the selected response without any additional comments in the following format:
+Question: selected question
+Answer: selected list/string of answers

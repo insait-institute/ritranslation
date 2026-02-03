@@ -1,0 +1,31 @@
+task: "BENCHMARK"
+output_dir: "src/benchmark/data"
+translation_model:
+  name: "gpt-4o-mini-2024-07-18"
+  provider: "openai"
+  args: {
+    reasoning_level: "low"
+  }
+judge_model:
+  name: "gpt-4o-mini-2024-07-18"
+  provider: "openai"
+  args: {
+    reasoning_level: "low"
+  }
+task_config:
+  benchmark: 
+    name: "openai/gsm8k"
+    subset: ["main"]
+    split: ["test"]
+  target_language: "Ukrainian"
+  method: "TRANK" # SC, USI, TRANK, BoN
+  max_workers: False
+  num_workers: 60
+  n_samples: 1
+  question_fields: ["question"]
+  answer_fields: ["answer"]
+  agent_check: False
+  few_shot: False
+  multi_prompt: True
+  prompt_files: ["gsm8k/gsm8k_base_1.txt", "gsm8k/gsm8k_base_2.txt", "gsm8k/gsm8k_base_1_ukr.txt", "gsm8k/gsm8k_base_2_ukr.txt"]
+

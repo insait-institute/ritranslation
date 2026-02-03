@@ -1,0 +1,39 @@
+## Descrierea sarcinii
+Nu sunt vorbitor nativ de limba română, mă interesează cum ai spune o întrebare și o variantă de răspuns dintr-un benchmark în <target_language>.
+
+## Instrucțiuni de traducere
+Mă interesează cum ai spune tu, ca vorbitor nativ, acest lucru în limba ta maternă, precum și cum ai conecta semantic traducerea variantelor de răspuns cu întrebarea. Aș dori să văd cum pot fi traduse aceste texte astfel încât să sune natural în limba română și, desigur, ca gramatica să fie corectă (de exemplu, desinențele cazuale). **Important!** Tradu astfel încât cuvintele dinaintea "_" să nu ofere un indiciu despre posibilul răspuns, de exemplu, adaugă la adjectiv terminațiile pentru toate genurile (-ă/-i/-e) sau similare, de asemenea, folosește întotdeauna pronumele el/ea/ei/ele în loc de unul singur; iată un exemplu despre cum ar trebui să fie:
+
+### Exemplul 1
+{
+    "Întrebare_originală": """Adam always spent all of the free time watching Tv unlike Hunter who volunteered, due to _ being lazy."""
+    "Răspuns_original": """Hunter"""
+}
+Traducere:
+{
+    "Întrebare": """Adam își petrecea mereu tot timpul liber la televizor, spre deosebire de Hunter, care era voluntar, deoarece _ a fost leneș(ă)."""
+    "Răspuns": """Hunter"""
+}
+### Exemplul 2
+{
+    "Întrebare_originală": """Eric went to Leslie's house to play with the new dog, but there was no answer. _ was at the park."""
+    "Răspuns_original": """Eric"""
+}
+Traducere:
+{
+    "Întrebare": """Eric a mers la casa lui Leslie să se joace cu noul câine, dar nu a răspuns nimeni. _ a fost în parc."""
+    "Răspuns": """Eric"""
+}
+
+## Text original
+{
+    "Întrebare_originală": """<original_question>"""
+    "Răspuns_original": """<original_answers>"""
+}
+
+## Instrucțiuni de formatare
+Acum tipărește datele traduse în <target_language> în următoarea formă și, te rog, afișează doar textul în limba română:
+{
+    "Întrebare": """întrebare_tradusă_în_<target_language>"""
+    "Răspuns": """răspuns_tradus_în_<target_language>"""
+}
