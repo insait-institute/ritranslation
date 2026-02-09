@@ -2,6 +2,7 @@
 
 [![Paper](https://img.shields.io/badge/Paper-arXiv-red)](https://arxiv.org/abs/XXXX.XXXXX)
 [![Code](https://img.shields.io/badge/Code-GitHub-blue)](https://github.com/insait-institute/ritranslation)
+[![Benchmarks](https://img.shields.io/badge/Benchmarks-HuggingFace-yellow)](https://hf.co/collections/INSAIT-Institute/multilingual-benchmarks)
 
 This repository contains the official implementation of the paper *"Recovered in Translation: Efficient Pipeline for Automated Translation of Benchmarks and Datasets"*.
 

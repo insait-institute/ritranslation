@@ -209,7 +209,7 @@ def prompt_google_model(system_prompt, user_prompt, cfg, temp=0.1, judge=False):
             )
             output = response.text
         except Exception as e:
-            time.sleep(30)
+            time.sleep(0.1)
             print(e)
 
 
@@ -264,7 +264,7 @@ def prompt_google_model_structured(system_prompt, user_prompt, cfg, schema=None,
             output = response.parsed
 
         except Exception as e:
-            time.sleep(30)
+            time.sleep(0.1)
             print(e)
 
     return output

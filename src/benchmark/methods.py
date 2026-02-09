@@ -87,7 +87,6 @@ def translate_using_sc(choices, question, target_lang, cfg=None):
             try_counter_translate += 1
             if try_counter_translate > 1: # if model fails to format translated output well then regenerate
                 temp = 0.5
-            # translated_question, translated_choices = prompt_openai_model_structured(system_prompt, user_prompt_translate, target_lang, cfg, TranslationOutput, temp, False)
             translated_dict = prompt_llm_model(system_prompt, user_prompt_translate, cfg, temp, False, TranslationOutput, "structured")
             translated_question = translated_dict.question_final
             translated_choices = translated_dict.answers_final
@@ -115,7 +114,6 @@ def translate_using_sc(choices, question, target_lang, cfg=None):
                 elif try_counter_check > 5:
                     print('Failed to translate question: ', question)
                     return [[None, None], [None, None]]
-                # corrected_question, corrected_choices = prompt_openai_model_structured(system_prompt, user_prompt_check_prepared, target_lang, cfg, CorrectedTranslationOutput, temp, True)
                 corrected_dict = prompt_llm_model(system_prompt, user_prompt_check_prepared, cfg, temp, True, CorrectedTranslationOutput, "structured")
                 corrected_question = corrected_dict.question_final
                 corrected_choices = corrected_dict.answers_final
@@ -201,7 +199,7 @@ def translate_using_usi(choices, question, target_lang, cfg=None):
                         counter_n_candidate_fails += 1
                 except Exception as e:
                     print('Error for question: ', question, ';', e)
-                    counter_n_candidate_fails += 1  # <-- Add this line
+                    counter_n_candidate_fails += 1  
                     continue
             translated_q_1_prompt.append(translated_question)
             translated_a_1_prompt.append(translated_choices)
@@ -211,7 +209,6 @@ def translate_using_usi(choices, question, target_lang, cfg=None):
     assert len(translated_question_samples) == no_samples * len(user_prompt_translate) == len(translated_choices_samples)
 
     user_prompt_check_prepared = fill_multi_gen_check_prompt(user_prompt_check, translated_question_samples, translated_choices_samples)
-    # print(user_prompt_check_prepared)
     corrected_question = None
     corrected_choices = None
     try_counter_check = 0
@@ -231,7 +228,6 @@ def translate_using_usi(choices, question, target_lang, cfg=None):
             elif try_counter_check > 3:
                 print('Failed to translate question: ', question)
                 return [None, None]
-            # corrected_question, corrected_choices = prompt_openai_model_structured(system_prompt, user_prompt_check_prepared, target_lang, cfg, CorrectedTranslationOutput, temp, True)
             corrected_dict = prompt_llm_model(system_prompt, user_prompt_check_prepared, cfg, temp, True, CorrectedTranslationOutput, "structured")
             corrected_question = corrected_dict.question_final
             corrected_choices = corrected_dict.answers_final
@@ -240,7 +236,6 @@ def translate_using_usi(choices, question, target_lang, cfg=None):
         except Exception:
             continue
         
-    # print(corrected_question, corrected_choices)
     return [corrected_question, corrected_choices]
 
 
@@ -305,7 +300,6 @@ def translate_using_trank(choices, question, target_lang, cfg=None):
             translated_question = translated_choices = None
             while translated_question is None or translated_choices is None:
                 try:
-                    # translated_question, translated_choices = prompt_openai_model_structured(system_prompt, prompt, target_lang, cfg, TranslationOutput, temp, False)
                     translated_dict = prompt_llm_model(system_prompt, prompt, cfg, temp, False, TranslationOutput, "structured")
                     translated_question = translated_dict.question_final
                     translated_choices = translated_dict.answers_final
@@ -441,9 +435,9 @@ def translate_using_trank(choices, question, target_lang, cfg=None):
                     corrected_answers_final: List[str] = Field(description=f"Corrected final translated answer options list in {target_lang}.")
           
             final_check_prompt = trank_get_final_prompt_template(question, choices, translated_question, translated_choices, target_lang, cfg)
+            final_check_prompt = fill_multi_gen_check_prompt(final_check_prompt, current_questions, current_answers)
             try:
                 corrected_output_dict = prompt_llm_model(system_prompt, final_check_prompt, cfg, 0.1, True, FinalTranslationOutput, "structured")
-                # print('\n', translated_question, translated_choices, '#####', corrected_output_dict.summary, '\n')
                 corrected_translated_question = corrected_output_dict.corrected_question_final
                 corrected_translated_choices = corrected_output_dict.corrected_answers_final
                 if not answer_str and len(corrected_translated_choices) != len(choices):
@@ -515,7 +509,6 @@ def translate_using_best_of_n(choices, question, target_lang, cfg=None):
         translated_question = translated_choices = None 
         while translated_question is None or translated_choices is None:
             try:
-                # translated_question, translated_choices = prompt_openai_model_structured(system_prompt, user_prompt_translate, target_lang, cfg, TranslationOutput, temp, False)
                 translated_dict = prompt_llm_model(system_prompt, user_prompt_translate, cfg, temp, False, TranslationOutput, "structured")
                 translated_question = translated_dict.question_final
                 translated_choices = translated_dict.answers_final
@@ -539,9 +532,7 @@ def translate_using_best_of_n(choices, question, target_lang, cfg=None):
             elif try_counter_check > 5:
                 print('Failed to translate question: ', question)
                 return [None, None]
-            # corrected_output = prompt_openai_model(system_prompt, user_prompt_check_prepared, cfg, temp, True)
             scored_output = prompt_llm_model(system_prompt, user_prompt_check_prepared, cfg, temp, True, ScoredOutput, "structured", "parsing")
-            # scores = extract_choices(corrected_output)
             scores = scored_output.scores_list
             translated_question = translated_question_samples[scores.index(max(scores))]
             translated_choices = translated_choices_samples[scores.index(max(scores))]
