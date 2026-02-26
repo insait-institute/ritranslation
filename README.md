@@ -1,6 +1,6 @@
 # Recovered in Translation
 
-[![Paper](https://img.shields.io/badge/Paper-arXiv-red)](https://arxiv.org/abs/XXXX.XXXXX)
+[![Paper](https://img.shields.io/badge/Paper-arXiv-red)](https://arxiv.org/abs/2602.22207)
 [![Code](https://img.shields.io/badge/Code-GitHub-blue)](https://github.com/insait-institute/ritranslation)
 [![Benchmarks](https://img.shields.io/badge/Benchmarks-HuggingFace-yellow)](https://hf.co/collections/INSAIT-Institute/multilingual-benchmarks)
 
@@ -200,6 +200,8 @@ task_config:
 | OpenRouter | `anthropic/claude-3-sonnet` | `provider: "openrouter"` |
 | Local vLLM | Custom model | `provider: "vllm"` |
 
+TODO: add Cohere API👀
+
 ---
 
 ## Project Structure
@@ -316,14 +318,14 @@ This work was done during a Master's thesis at INSAIT, Sofia University "St. Kli
 If you find this work useful, please cite:
 
 ```bibtex
-@article{yukhymenko2025recovered,
+@article{yukhymenko2026recovered,
   title={Recovered in Translation: Efficient Pipeline for Automated Translation of Benchmarks and Datasets},
   author={Yukhymenko, Hanna and Alexandrov, Anton and Vechev, Martin},
-  journal={arXiv preprint arXiv:XXXX.XXXXX},
+  journal={arXiv preprint arXiv:2602.22207},
   year={2026}
 }
 ```
 
 ## Contact
 
-For questions or issues, please open an issue on [GitHub](https://github.com/insait-institute/ritranslation/issues) or contact: hyukhymenko@ethz.ch
+For questions or issues, please open an issue on [GitHub](https://github.com/insait-institute/ritranslation/issues) or contact: hanna.yukhymenko@insait.ai 
